@@ -107,6 +107,7 @@
         } else {
           _this.bar.classList.remove('ss-hidden')
           _this.bar.style.cssText = 'height:' + Math.max(_this.scrollRatio * 100, 10) + '%; top:' + (_this.el.scrollTop / totalHeight ) * 100 + '%;right:' + right + 'px;';
+          _this.bar.classList.add('ss-ready')
         }
       });
     }
